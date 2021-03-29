@@ -1,0 +1,286 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*reset*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+a {
+    color: #09887d;
+    text-decoration: unset;
+}
+
+ul {
+    margin: 1.5rem;
+    list-style: none;
+}
+
+button,
+input[type="submit"] {
+    border: none;
+    background: none;
+    color: unset;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h4, h5, h6, p,ul, ol{
+    margin: 1em 0;
+}
+
+/*general*/
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.page {
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 50px;
+}
+
+.form{
+    padding: auto;
+}
+
+/*header*/
+
+#header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: 	#008080;
+}
+
+#header .title {
+    padding: 0 1rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+#header .auth-options {
+    height: 100%;
+    display: flex;
+}
+
+#header .auth-options button{
+    padding: 0 1rem;
+    background-color: #008080;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+#header .auth-options button:hover{
+    padding: 0 1rem;
+    background-color: #C0C0C0;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 550px) {
+    #header .title {
+        font-size: 1.2rem;
+    }
+    #header .auth-options button{
+        padding: 0 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+.form{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form label,
+.form input {
+    display: block;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.form select{
+    margin-bottom: 1rem;
+}
+
+.form input{
+    margin-bottom: 1rem;
+}
+.form label{
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="select"],
+.form input[type="option"]{
+    width: 50%;
+    padding: 0.3rem;
+    border: 1px solid #c2c2c2;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    font-size: 1.1rem;
+}
+
+.form input:focus {
+    border: 1px solid #268ee4;
+    box-shadow: inset 0px 0px, 5px,rgba(38, 142, 228, 0.5);
+    outline: none;
+}
+
+.form input[type="submit"] {
+    border-radius: 8px;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #6aa051;
+    background-color: #3cb371;
+}
+
+.form input[type="submit"]:hover{
+    border-radius: 8px;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #6aa051;
+    background-color: #bce4aa;
+}
+
+.error-notice {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid #e07c7c;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8d6d6;
+}
+
+.error-notice button{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #df4343;
+    color: #ffffff;
+}
+
+/* table */
+
+.new-table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+.new-table td, .new-table th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+.new-table tr:nth-child(even) {
+background-color: #dddddd;
+}
+
+.edit_profile_btn{
+    border-radius: 8px;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #6aa051;
+    background-color: #3cb371;
+    cursor: pointer;
+    color:white;
+}
+
+.edit_job_btn{
+    border-radius: 8px;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #6aa051;
+    background-color: #f3f71d;
+    cursor: pointer;
+    color:black;
+}
+
+.delete_job_btn{
+    border-radius: 8px;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #8b1010;
+    background-color: #ec0808;
+    cursor: pointer;
+    color:white;
+}
+
+.create_job_btn{
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #6aa051;
+    background-color: #3cb371;
+    cursor: pointer;
+    color:white;
+    float: right;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.accepted_candidates_btn{
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #6aa051;
+    background-color: #3cb371;
+    cursor: pointer;
+    color:white;
+    float: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.search{
+    display: inline;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.sort{
+    display: inline;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.filters{
+    display: inline;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.info {
+    display: inline
+}
+
+.sort_another{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+#home{
+    text-align: center;
+    padding: 375px;
+    color: #000000;
+    background-color: #7dcdec;
+}
