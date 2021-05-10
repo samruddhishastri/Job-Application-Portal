@@ -13,6 +13,7 @@ unzip 2019111039.zip
 cd 2019111039
 cd frontend
 npm install
+npm install antd
 npm start
 ```
 ```bash
